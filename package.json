@@ -8,7 +8,7 @@
     "prepush": "npm test",
     "build": "webpack --env production",
     "lint:js": "eslint app/ webpack.*.js --cache",
-    "precommit": "eslint app/ webpack.*.js --cache",
+    "precommit": "npm test",
     "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development\"",
     "start-nodemon": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development\""
   },
