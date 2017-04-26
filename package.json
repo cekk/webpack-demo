@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "npm run lint:js",
     "prepush": "npm test",
     "build": "webpack --env production",
     "lint:js": "eslint app/ webpack.*.js --cache",
+    "precommit": "eslint app/ webpack.*.js --cache",
     "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development\"",
     "start-nodemon": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development\""
   },
